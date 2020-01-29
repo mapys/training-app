@@ -7,6 +7,7 @@ import { HomeComponent } from './core/containers/home/home.component';
 import { BlogComponent } from './core/containers/blog/blog.component';
 import { UserListComponent } from './core/components/user-list/user-list.component';
 import { UserComponent } from './core/components/user/user.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserComponent } from './core/components/user/user.component';
     HomeComponent,
     BlogComponent,
     UserListComponent,
-    UserComponent
+    UserComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

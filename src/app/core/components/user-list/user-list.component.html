@@ -1,1 +1,20 @@
-<button (click)="selectUser()">Select User</button>
+<div>
+    <table>
+        <thead>
+            <td>First Name</td>
+            <td>Middle Name</td>
+            <td>Last Name</td>
+            <td>Age</td>
+            <td>Is Active</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.middleName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.age }}</td>
+                <td *ngIf="user.activeUser">{{ user.activeUser }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

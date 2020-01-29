@@ -1,3 +1,4 @@
+import { User } from './../../../shared/models/User';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  listOfUsers = ["user1", "user2", "user3"];
+  user1:User = {
+    firstName: 'Mapy',
+    lastName: 'Sebastian',
+    middleName: 'Yalong',
+    age: 29,
+    activeUser: true
+  }
+
+  user2:User = {
+    firstName: 'Mark',
+    lastName: 'Sebastian',
+    age: 22,
+    activeUser: false
+  }
+  
+  listOfUsers: Array<User> = [this.user1, this.user2];
+  
   constructor() { }
 
   ngOnInit() {
