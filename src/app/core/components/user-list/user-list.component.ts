@@ -9,7 +9,7 @@ import { EventEmitter } from '@angular/core';
 export class UserListComponent implements OnInit, AfterViewInit, OnDestroy, OnChanges {
   @Input() users : Array<string> = [];
   @Output() selectedUser = new EventEmitter();
-
+  userFirstName: string = "Genos";
   constructor() { }
 
   ngOnInit(){

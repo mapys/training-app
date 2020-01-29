@@ -1,5 +1,5 @@
 import { User } from './../../../shared/models/User';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +29,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectedUser(user: string){
+  selectedUser(user: User){
+    console.log(user);
+  }
+
+  getFormValue(user: User){
     console.log(user);
   }
 }
